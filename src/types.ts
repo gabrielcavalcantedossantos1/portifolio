@@ -10,7 +10,7 @@ export interface Project {
   technologies: string[]
   githubUrl?: string
   liveUrl?: string
-  image?: string
+  image: string
   status: ProjectStatus
   highlights: string[]
   year: number
