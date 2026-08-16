@@ -65,9 +65,22 @@ export const navLinks = [
   { label: "Contato", href: "#contato" },
 ] as const;
 
+const now = new Date()
+const lastYear = now.getFullYear() - 1
+const studyStart = new Date(lastYear, 7, 1) // agosto do ano passado
+
+function calculateYears(start: Date, end = new Date()) {
+  let years = end.getFullYear() - start.getFullYear()
+  const monthDiff = end.getMonth() - start.getMonth()
+  if (monthDiff < 0 || (monthDiff === 0 && end.getDate() < start.getDate())) {
+    years--
+  }
+  return years
+}
+
 export const portfolioStats = {
   frontendProjects: frontendProjects.length,
   backendProjects: backendProjects.length,
   totalTechnologies: skills.length,
-  yearsOfExperience: 0,
+  yearsOfStudies: calculateYears(studyStart, now),
 } as const;

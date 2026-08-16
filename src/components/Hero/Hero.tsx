@@ -15,8 +15,8 @@ const stats = [
     label: 'Tecnologias',
   },
   {
-    value: `${portfolioStats.yearsOfExperience}+`,
-    label: 'Anos de experiência',
+    value: `${portfolioStats.yearsOfStudies}+`,
+    label: 'Anos de estudos',
   },
 ] as const
 
