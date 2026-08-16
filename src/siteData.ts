@@ -1,5 +1,9 @@
 import type { Experience, PersonalInfo, Skill } from "./types";
-import { frontendProjects, backendProjects } from "./data";
+import {
+  experiences as portfolioExperiences,
+  frontendProjects,
+  backendProjects,
+} from "./data";
 
 export const personalInfo: PersonalInfo = {
   name: "Gabriel Cavalcante dos Santos",
@@ -55,7 +59,7 @@ export const skills: Skill[] = [
   { name: "npm", category: "tools" },
 ];
 
-export const experiences: Experience[] = [];
+export const experiences: Experience[] = portfolioExperiences;
 
 export const navLinks = [
   { label: "Início", href: "#inicio" },
@@ -65,17 +69,17 @@ export const navLinks = [
   { label: "Contato", href: "#contato" },
 ] as const;
 
-const now = new Date()
-const lastYear = now.getFullYear() - 1
-const studyStart = new Date(lastYear, 7, 1) // agosto do ano passado
+const now = new Date();
+const lastYear = now.getFullYear() - 1;
+const studyStart = new Date(lastYear, 7, 1); // agosto do ano passado
 
 function calculateYears(start: Date, end = new Date()) {
-  let years = end.getFullYear() - start.getFullYear()
-  const monthDiff = end.getMonth() - start.getMonth()
+  let years = end.getFullYear() - start.getFullYear();
+  const monthDiff = end.getMonth() - start.getMonth();
   if (monthDiff < 0 || (monthDiff === 0 && end.getDate() < start.getDate())) {
-    years--
+    years--;
   }
-  return years
+  return years;
 }
 
 export const portfolioStats = {
