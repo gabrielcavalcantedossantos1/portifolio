@@ -1,5 +1,4 @@
 import profilePhoto from "../../assets/face/rosto.jpeg";
-import placeholderHero from "../../assets/hero.png";
 import { personalInfo, portfolioStats } from "../../siteData";
 import styles from "./Hero.module.css";
 
@@ -68,17 +67,45 @@ export function Hero() {
       </div>
 
       <div className={styles.visual}>
-        <div className={styles.photoFrame}>
+        <div className={styles.codeBlock} aria-hidden="true">
+          <div className={styles.codeHeader}>
+            <span className={styles.dot} data-color="red" />
+            <span className={styles.dot} data-color="yellow" />
+            <span className={styles.dot} data-color="green" />
+            <span className={styles.codeFilename}>portfolio.ts</span>
+          </div>
+          <pre className={styles.code}>
+            <code>
+              <span className={styles.keyword}>const</span>{" "}
+              <span className={styles.variable}>developer</span> = {"{"}
+              {"\n"}
+              {"  "}
+              <span className={styles.property}>name</span>:{" "}
+              <span className={styles.string}>"{personalInfo.name}"</span>,
+              {"\n"}
+              {"  "}
+              <span className={styles.property}>role</span>:{" "}
+              <span className={styles.string}>"{personalInfo.role}"</span>,
+              {"\n"}
+              {"  "}
+              <span className={styles.property}>passion</span>:{" "}
+              <span className={styles.string}>"code & design"</span>,{"\n"}
+              {"  "}
+              <span className={styles.property}>available</span>:{" "}
+              <span className={styles.boolean}>
+                {personalInfo.availableForWork ? "true" : "false"}
+              </span>
+              {"\n"}
+              {"};"}
+            </code>
+          </pre>
+        </div>
+
+        <div className={styles.photoFrame} aria-hidden="true">
           <img
             src={profilePhoto}
             alt={personalInfo.name}
             className={styles.photo}
-          />
-
-          <img
-            src={placeholderHero}
-            alt="placeholder"
-            className={styles.photoSecondary}
           />
         </div>
       </div>

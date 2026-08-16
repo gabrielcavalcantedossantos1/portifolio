@@ -184,7 +184,78 @@
 
 .visual {
   display: flex;
+  gap: 1.25rem;
   justify-content: center;
+  align-items: center;
+}
+
+.codeBlock {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--surface-elevated);
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot[data-color="red"] {
+  background: #ff5f57;
+}
+
+.dot[data-color="yellow"] {
+  background: #febc2e;
+}
+
+.dot[data-color="green"] {
+  background: #28c840;
+}
+
+.codeFilename {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.code {
+  margin: 0;
+  padding: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+.keyword {
+  color: #c678dd;
+}
+.variable {
+  color: #e5c07b;
+}
+.property {
+  color: #61afef;
+}
+.string {
+  color: #98c379;
+}
+.boolean {
+  color: #d19a66;
 }
 
 .photoFrame {
@@ -225,22 +296,6 @@
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.35);
 }
 
-.photoSecondary {
-  position: absolute;
-  z-index: 2;
-  right: 1rem;
-  top: 1rem;
-  width: 120px;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.25);
-  transform: rotate(-4deg);
-  background: rgba(255, 255, 255, 0.02);
-}
-
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -255,10 +310,6 @@
 
   .photoFrame {
     max-width: 100%;
-  }
-
-  .photoSecondary {
-    display: none;
   }
 
   .stats {
