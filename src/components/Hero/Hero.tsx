@@ -1,0 +1,106 @@
+import { personalInfo, portfolioStats } from '../../siteData'
+import styles from './Hero.module.css'
+
+const stats = [
+  {
+    value: portfolioStats.frontendProjects,
+    label: 'Projetos Front-end',
+  },
+  {
+    value: portfolioStats.backendProjects,
+    label: 'Projetos Back-end',
+  },
+  {
+    value: portfolioStats.totalTechnologies,
+    label: 'Tecnologias',
+  },
+  {
+    value: `${portfolioStats.yearsOfExperience}+`,
+    label: 'Anos de experiência',
+  },
+] as const
+
+export function Hero() {
+  return (
+    <section id="inicio" className={styles.hero}>
+      <div className={styles.content}>
+        {personalInfo.availableForWork && (
+          <span className={styles.badge}>
+            <span className={styles.badgeDot} aria-hidden="true" />
+            Disponível para projetos
+          </span>
+        )}
+
+        <p className={styles.greeting}>Olá, eu sou</p>
+        <h1 className={styles.name}>{personalInfo.name}</h1>
+        <h2 className={styles.role}>{personalInfo.role}</h2>
+        <p className={styles.tagline}>{personalInfo.tagline}</p>
+
+        <div className={styles.actions}>
+          <a href="#projetos" className={styles.btnPrimary}>
+            Ver projetos
+          </a>
+          <a href="#contato" className={styles.btnSecondary}>
+            Entrar em contato
+          </a>
+        </div>
+
+        <div className={styles.meta}>
+          <span>{personalInfo.location}</span>
+          <span className={styles.metaDivider} aria-hidden="true">
+            ·
+          </span>
+          <a href={`mailto:${personalInfo.email}`} className={styles.emailLink}>
+            {personalInfo.email}
+          </a>
+        </div>
+
+        <dl className={styles.stats}>
+          {stats.map((stat) => (
+            <div key={stat.label} className={styles.stat}>
+              <dt className={styles.statLabel}>{stat.label}</dt>
+              <dd className={styles.statValue}>{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+
+      <div className={styles.visual} aria-hidden="true">
+        <div className={styles.codeBlock}>
+          <div className={styles.codeHeader}>
+            <span className={styles.dot} data-color="red" />
+            <span className={styles.dot} data-color="yellow" />
+            <span className={styles.dot} data-color="green" />
+            <span className={styles.codeFilename}>portfolio.ts</span>
+          </div>
+          <pre className={styles.code}>
+            <code>
+              <span className={styles.keyword}>const</span>{' '}
+              <span className={styles.variable}>developer</span> = {'{'}
+              {'\n'}
+              {'  '}
+              <span className={styles.property}>name</span>:{' '}
+              <span className={styles.string}>"{personalInfo.name}"</span>,
+              {'\n'}
+              {'  '}
+              <span className={styles.property}>role</span>:{' '}
+              <span className={styles.string}>"{personalInfo.role}"</span>,
+              {'\n'}
+              {'  '}
+              <span className={styles.property}>passion</span>:{' '}
+              <span className={styles.string}>"code & design"</span>,
+              {'\n'}
+              {'  '}
+              <span className={styles.property}>available</span>:{' '}
+              <span className={styles.boolean}>
+                {personalInfo.availableForWork ? 'true' : 'false'}
+              </span>
+              {'\n'}
+              {'};'}
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+  )
+}
