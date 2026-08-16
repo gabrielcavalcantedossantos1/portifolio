@@ -7,7 +7,7 @@ export const personalInfo: PersonalInfo = {
   tagline:
     "Desenvolvedor Front-End em evolução, com o objetivo de me tornar Full Stack.",
   bio: "Sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor Front-End em formação. Tenho experiência prática desenvolvendo projetos com React, TypeScript, JavaScript e Tailwind CSS. Gosto de transformar ideias em aplicações reais, criando interfaces modernas, responsivas e funcionais. Atualmente, meu foco está no desenvolvimento Front-End, enquanto estudo Back-End para ampliar minhas habilidades e me tornar um desenvolvedor Full Stack.",
-  location: "Goiânia, Goiás, Brasil",
+  location: "Goianira, Goiás, Brasil",
   email: "gabrielcavalcantedossantos1@gmail.com",
   availableForWork: true,
 
