@@ -11,17 +11,17 @@ const tabs: { key: ProjectCategory; label: string; count: number }[] = [
 
 export function Projects() {
   const [activeTab, setActiveTab] = useState<ProjectCategory>('frontend')
-  const [visibleCount, setVisibleCount] = useState(8)
+  const [visibleCount, setVisibleCount] = useState(6)
 
   useEffect(() => {
-    setVisibleCount(8)
+    setVisibleCount(6)
   }, [activeTab])
 
   const projects = activeTab === 'frontend' ? frontendProjects : backendProjects
   const visibleProjects = projects.slice(0, visibleCount)
 
   const handleLoadMore = () => {
-    setVisibleCount((c) => c + 8)
+    setVisibleCount((c) => c + 6)
   }
 
   return (
