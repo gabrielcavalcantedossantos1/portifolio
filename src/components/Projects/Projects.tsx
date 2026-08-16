@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { backendProjects, frontendProjects } from '../../data'
 import type { ProjectCategory } from '../../types'
 import { ProjectCard } from './ProjectCard'
@@ -11,9 +11,18 @@ const tabs: { key: ProjectCategory; label: string; count: number }[] = [
 
 export function Projects() {
   const [activeTab, setActiveTab] = useState<ProjectCategory>('frontend')
+  const [visibleCount, setVisibleCount] = useState(8)
 
-  const projects =
-    activeTab === 'frontend' ? frontendProjects : backendProjects
+  useEffect(() => {
+    setVisibleCount(8)
+  }, [activeTab])
+
+  const projects = activeTab === 'frontend' ? frontendProjects : backendProjects
+  const visibleProjects = projects.slice(0, visibleCount)
+
+  const handleLoadMore = () => {
+    setVisibleCount((c) => c + 8)
+  }
 
   return (
     <section id="projetos" className={styles.projects}>
@@ -56,7 +65,7 @@ export function Projects() {
         aria-labelledby={`tab-${activeTab}`}
         className={styles.grid}
       >
-        {projects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <ProjectCard
             key={project.id}
             project={project}
@@ -65,6 +74,18 @@ export function Projects() {
           />
         ))}
       </div>
+
+      {projects.length > visibleProjects.length && (
+        <div className={styles.actions}>
+          <button
+            type="button"
+            className={styles.loadMore}
+            onClick={handleLoadMore}
+          >
+            Ver mais
+          </button>
+        </div>
+      )}
     </section>
   )
 }
