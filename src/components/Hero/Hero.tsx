@@ -1,4 +1,5 @@
 import profilePhoto from "../../assets/face/rosto.jpeg";
+import placeholderHero from "../../assets/hero.png";
 import { personalInfo, portfolioStats } from "../../siteData";
 import styles from "./Hero.module.css";
 
@@ -72,6 +73,12 @@ export function Hero() {
             src={profilePhoto}
             alt={personalInfo.name}
             className={styles.photo}
+          />
+
+          <img
+            src={placeholderHero}
+            alt="placeholder"
+            className={styles.photoSecondary}
           />
         </div>
       </div>
