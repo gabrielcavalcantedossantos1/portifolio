@@ -1,24 +1,25 @@
-import { personalInfo, portfolioStats } from '../../siteData'
-import styles from './Hero.module.css'
+import profilePhoto from "../../assets/face/rosto.jpeg";
+import { personalInfo, portfolioStats } from "../../siteData";
+import styles from "./Hero.module.css";
 
 const stats = [
   {
     value: portfolioStats.frontendProjects,
-    label: 'Projetos Front-end',
+    label: "Projetos Front-end",
   },
   {
     value: portfolioStats.backendProjects,
-    label: 'Projetos Back-end',
+    label: "Projetos Back-end",
   },
   {
     value: portfolioStats.totalTechnologies,
-    label: 'Tecnologias',
+    label: "Tecnologias",
   },
   {
     value: `${portfolioStats.yearsOfStudies}+`,
-    label: 'Anos de estudos',
+    label: "Anos de estudos",
   },
-] as const
+] as const;
 
 export function Hero() {
   return (
@@ -65,42 +66,15 @@ export function Hero() {
         </dl>
       </div>
 
-      <div className={styles.visual} aria-hidden="true">
-        <div className={styles.codeBlock}>
-          <div className={styles.codeHeader}>
-            <span className={styles.dot} data-color="red" />
-            <span className={styles.dot} data-color="yellow" />
-            <span className={styles.dot} data-color="green" />
-            <span className={styles.codeFilename}>portfolio.ts</span>
-          </div>
-          <pre className={styles.code}>
-            <code>
-              <span className={styles.keyword}>const</span>{' '}
-              <span className={styles.variable}>developer</span> = {'{'}
-              {'\n'}
-              {'  '}
-              <span className={styles.property}>name</span>:{' '}
-              <span className={styles.string}>"{personalInfo.name}"</span>,
-              {'\n'}
-              {'  '}
-              <span className={styles.property}>role</span>:{' '}
-              <span className={styles.string}>"{personalInfo.role}"</span>,
-              {'\n'}
-              {'  '}
-              <span className={styles.property}>passion</span>:{' '}
-              <span className={styles.string}>"code & design"</span>,
-              {'\n'}
-              {'  '}
-              <span className={styles.property}>available</span>:{' '}
-              <span className={styles.boolean}>
-                {personalInfo.availableForWork ? 'true' : 'false'}
-              </span>
-              {'\n'}
-              {'};'}
-            </code>
-          </pre>
+      <div className={styles.visual}>
+        <div className={styles.photoFrame}>
+          <img
+            src={profilePhoto}
+            alt={personalInfo.name}
+            className={styles.photo}
+          />
         </div>
       </div>
     </section>
-  )
+  );
 }
