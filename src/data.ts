@@ -1,5 +1,7 @@
 import type { Project } from './types'
 
+import studyFlow from "./assets/imageProjectsFrontEnd/studyFlow.png"
+
 export const frontendProjects: Project[] = [
   {
     id: 'fe-1',
@@ -8,7 +10,7 @@ export const frontendProjects: Project[] = [
       'SaaS para organização de estudos com tarefas, categorias, Pomodoro e acompanhamento de progresso.',
     longDescription:
       'Aplicação web desenvolvida para ajudar estudantes a organizar sua rotina de estudos. Possui autenticação de usuários, gerenciamento de tarefas e categorias, timer Pomodoro e cards de resumo. A aplicação utiliza React e TypeScript no Front-End e Firebase para autenticação e persistência dos dados.',
-    image: '/src/assets/hero.png',
+    image: studyFlow,
     technologies: [
       'React',
       'TypeScript',
