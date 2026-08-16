@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { backendProjects, frontendProjects } from '../../data'
 import type { ProjectCategory } from '../../types'
 import { ProjectCard } from './ProjectCard'
@@ -12,10 +12,6 @@ const tabs: { key: ProjectCategory; label: string; count: number }[] = [
 export function Projects() {
   const [activeTab, setActiveTab] = useState<ProjectCategory>('frontend')
   const [visibleCount, setVisibleCount] = useState(6)
-
-  useEffect(() => {
-    setVisibleCount(6)
-  }, [activeTab])
 
   const projects = activeTab === 'frontend' ? frontendProjects : backendProjects
   const visibleProjects = projects.slice(0, visibleCount)
@@ -50,7 +46,10 @@ export function Projects() {
             aria-controls={`panel-${tab.key}`}
             className={styles.tab}
             data-active={activeTab === tab.key}
-            onClick={() => setActiveTab(tab.key)}
+            onClick={() => {
+              setActiveTab(tab.key)
+              setVisibleCount(6)
+            }}
           >
             {tab.label}
             <span className={styles.tabCount}>{tab.count}</span>
