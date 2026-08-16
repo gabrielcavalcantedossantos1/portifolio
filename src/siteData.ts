@@ -1,80 +1,73 @@
-import type { Experience, PersonalInfo, Skill } from './types'
-import { frontendProjects, backendProjects } from './data'
+import type { Experience, PersonalInfo, Skill } from "./types";
+import { frontendProjects, backendProjects } from "./data";
 
 export const personalInfo: PersonalInfo = {
-  name: 'Gabriel',
-  role: 'Desenvolvedor Full Stack',
-  tagline: 'Construo experiências digitais com foco em performance, acessibilidade e código limpo.',
-  bio: 'Desenvolvedor apaixonado por transformar ideias em produtos reais. Trabalho com React, TypeScript e Node.js, sempre buscando equilíbrio entre design elegante e arquitetura sólida. Acredito em código legível, testes quando fazem sentido e entrega contínua de valor.',
-  location: 'Brasil',
-  email: 'seu.email@exemplo.com',
+  name: "Gabriel Cavalcante dos Santos",
+  role: "Desenvolvedor Front-End",
+  tagline:
+    "Desenvolvedor Front-End em evolução, com o objetivo de me tornar Full Stack.",
+  bio: "Sou estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor Front-End em formação. Tenho experiência prática desenvolvendo projetos com React, TypeScript, JavaScript e Tailwind CSS. Gosto de transformar ideias em aplicações reais, criando interfaces modernas, responsivas e funcionais. Atualmente, meu foco está no desenvolvimento Front-End, enquanto estudo Back-End para ampliar minhas habilidades e me tornar um desenvolvedor Full Stack.",
+  location: "Goiânia, Goiás, Brasil",
+  email: "gabrielcavalcantedossantos1@gmail.com",
   availableForWork: true,
+
   social: [
     {
-      label: 'GitHub',
-      url: 'https://github.com/seu-usuario',
-      icon: 'github',
+      label: "GitHub",
+      url: "https://github.com/gabrielcavalcantedossantos1",
+      icon: "github",
     },
     {
-      label: 'LinkedIn',
-      url: 'https://linkedin.com/in/seu-usuario',
-      icon: 'linkedin',
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/gabrielc-dev/",
+      icon: "linkedin",
     },
     {
-      label: 'E-mail',
-      url: 'mailto:seu.email@exemplo.com',
-      icon: 'email',
+      label: "E-mail",
+      url: "mailto:gabrielcavalcantedossantos1@gmail.com",
+      icon: "email",
     },
   ],
-}
+};
 
 export const skills: Skill[] = [
-  { name: 'React', category: 'frontend' },
-  { name: 'TypeScript', category: 'frontend' },
-  { name: 'Next.js', category: 'frontend' },
-  { name: 'Tailwind CSS', category: 'frontend' },
-  { name: 'HTML & CSS', category: 'frontend' },
-  { name: 'Node.js', category: 'backend' },
-  { name: 'Express', category: 'backend' },
-  { name: 'PostgreSQL', category: 'backend' },
-  { name: 'MongoDB', category: 'backend' },
-  { name: 'REST APIs', category: 'backend' },
-  { name: 'Git', category: 'tools' },
-  { name: 'Docker', category: 'tools' },
-  { name: 'Figma', category: 'tools' },
-  { name: 'Vite', category: 'tools' },
-]
+  // Front-End
+  { name: "HTML", category: "frontend" },
+  { name: "CSS", category: "frontend" },
+  { name: "JavaScript", category: "frontend" },
+  { name: "TypeScript", category: "frontend" },
+  { name: "React", category: "frontend" },
+  { name: "Tailwind CSS", category: "frontend" },
+  { name: "React Router", category: "frontend" },
 
-export const experiences: Experience[] = [
-  {
-    id: 'exp-1',
-    company: 'Empresa Tech',
-    role: 'Desenvolvedor Full Stack',
-    period: '2024 — Presente',
-    description:
-      'Desenvolvimento de features end-to-end, code reviews e mentoria de desenvolvedores júnior.',
-  },
-  {
-    id: 'exp-2',
-    company: 'Startup XYZ',
-    role: 'Desenvolvedor Front-end',
-    period: '2022 — 2024',
-    description:
-      'Construção de interfaces React, integração com APIs REST e otimização de performance.',
-  },
-]
+  // Back-End / Estudos
+  { name: "C", category: "backend" },
+  { name: "Java", category: "backend" },
+  { name: "Firebase", category: "backend" },
+  { name: "Firestore", category: "backend" },
+  { name: "JSON Server", category: "backend" },
+  { name: "REST APIs", category: "backend" },
+
+  // Ferramentas
+  { name: "Git", category: "tools" },
+  { name: "GitHub", category: "tools" },
+  { name: "Vite", category: "tools" },
+  { name: "npm", category: "tools" },
+];
+
+export const experiences: Experience[] = [];
 
 export const navLinks = [
-  { label: 'Início', href: '#inicio' },
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projetos', href: '#projetos' },
-  { label: 'Contato', href: '#contato' },
-] as const
+  { label: "Início", href: "#inicio" },
+  { label: "Sobre", href: "#sobre" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projetos", href: "#projetos" },
+  { label: "Contato", href: "#contato" },
+] as const;
 
 export const portfolioStats = {
   frontendProjects: frontendProjects.length,
   backendProjects: backendProjects.length,
   totalTechnologies: skills.length,
-  yearsOfExperience: 3,
-} as const
+  yearsOfExperience: 0,
+} as const;
