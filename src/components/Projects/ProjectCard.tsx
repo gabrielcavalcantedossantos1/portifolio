@@ -12,6 +12,10 @@ export function ProjectCard({ project, category, style }: ProjectCardProps) {
   return (
     <article className={styles.card} style={style}>
       <div className={styles.thumbnail} data-category={category}>
+        {project.image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={project.image} alt={project.title} className={styles.thumbImg} />
+        )}
         <span className={styles.thumbnailIcon} aria-hidden="true">
           {category === 'frontend' ? '◈' : '⬡'}
         </span>
