@@ -7,6 +7,7 @@ export const frontendProjects: Project[] = [
     description: 'Painel interativo com gráficos em tempo real e filtros avançados.',
     longDescription:
       'Dashboard completo para visualização de métricas de negócio. Inclui gráficos responsivos, exportação de relatórios em PDF e tema claro/escuro persistente.',
+    image: '/src/assets/hero.png',
     technologies: ['React', 'TypeScript', 'Recharts', 'Tailwind CSS'],
     githubUrl: 'https://github.com/seu-usuario/dashboard-analytics',
     liveUrl: 'https://dashboard-exemplo.vercel.app',
@@ -24,6 +25,7 @@ export const frontendProjects: Project[] = [
     description: 'Loja virtual com carrinho, checkout e catálogo de produtos.',
     longDescription:
       'Interface de e-commerce moderna com fluxo de compra otimizado, busca com debounce, filtros por categoria e animações suaves entre páginas.',
+    image: '/src/assets/hero.png',
     technologies: ['React', 'TypeScript', 'Zustand', 'CSS Modules'],
     githubUrl: 'https://github.com/seu-usuario/ecommerce-ui',
     liveUrl: 'https://loja-exemplo.vercel.app',
@@ -41,6 +43,7 @@ export const frontendProjects: Project[] = [
     description: 'Gerenciador de tarefas com drag-and-drop e colaboração em equipe.',
     longDescription:
       'Aplicação estilo Kanban com colunas personalizáveis, arrastar e soltar tarefas, etiquetas coloridas e modo de visualização em lista ou board.',
+    image: '/src/assets/hero.png',
     technologies: ['React', 'TypeScript', 'dnd-kit', 'Framer Motion'],
     githubUrl: 'https://github.com/seu-usuario/task-manager',
     status: 'in-progress',
@@ -57,6 +60,7 @@ export const frontendProjects: Project[] = [
     description: 'Gerador de portfólios a partir de templates configuráveis.',
     longDescription:
       'Ferramenta que permite criar portfólios personalizados escolhendo templates, cores e seções. Preview em tempo real e exportação estática.',
+    image: '/src/assets/hero.png',
     technologies: ['React', 'TypeScript', 'Vite', 'CSS Variables'],
     githubUrl: 'https://github.com/seu-usuario/portfolio-generator',
     liveUrl: 'https://portfolio-gen.vercel.app',
@@ -77,6 +81,7 @@ export const backendProjects: Project[] = [
     description: 'API de autenticação com JWT, refresh tokens e controle de roles.',
     longDescription:
       'Serviço RESTful completo para autenticação de usuários. Implementa registro, login, refresh token rotation, middleware de autorização por roles e rate limiting.',
+    image: '/src/assets/hero.png',
     technologies: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'JWT'],
     githubUrl: 'https://github.com/seu-usuario/auth-api',
     status: 'completed',
@@ -93,6 +98,7 @@ export const backendProjects: Project[] = [
     description: 'Headless CMS para gerenciamento de posts, categorias e mídia.',
     longDescription:
       'API REST para um CMS de blog com CRUD de posts, upload de imagens, categorias aninhadas, paginação cursor-based e busca full-text.',
+    image: '/src/assets/hero.png',
     technologies: ['Node.js', 'Fastify', 'MongoDB', 'AWS S3'],
     githubUrl: 'https://github.com/seu-usuario/blog-cms-api',
     status: 'completed',
@@ -109,6 +115,7 @@ export const backendProjects: Project[] = [
     description: 'Integração com gateways de pagamento e webhooks de confirmação.',
     longDescription:
       'Microsserviço para processamento de pagamentos com suporte a múltiplos provedores, filas de retry para webhooks e logs estruturados para auditoria.',
+    image: '/src/assets/hero.png',
     technologies: ['Node.js', 'Express', 'Stripe', 'BullMQ', 'PostgreSQL'],
     githubUrl: 'https://github.com/seu-usuario/payment-gateway',
     status: 'in-progress',
@@ -125,6 +132,7 @@ export const backendProjects: Project[] = [
     description: 'Servidor WebSocket para chat em tempo real com salas e presença.',
     longDescription:
       'Backend de chat em tempo real usando WebSockets. Suporta salas privadas e públicas, indicador de digitação, histórico de mensagens e status online/offline.',
+    image: '/src/assets/hero.png',
     technologies: ['Node.js', 'Socket.io', 'Redis', 'MongoDB'],
     githubUrl: 'https://github.com/seu-usuario/chat-server',
     status: 'completed',
