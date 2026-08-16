@@ -67,6 +67,14 @@ export function Hero() {
       </div>
 
       <div className={styles.visual}>
+        <div className={styles.photoFrame} aria-hidden="true">
+          <img
+            src={profilePhoto}
+            alt={personalInfo.name}
+            className={styles.photo}
+          />
+        </div>
+
         <div className={styles.codeBlock} aria-hidden="true">
           <div className={styles.codeHeader}>
             <span className={styles.dot} data-color="red" />
@@ -99,14 +107,6 @@ export function Hero() {
               {"};"}
             </code>
           </pre>
-        </div>
-
-        <div className={styles.photoFrame} aria-hidden="true">
-          <img
-            src={profilePhoto}
-            alt={personalInfo.name}
-            className={styles.photo}
-          />
         </div>
       </div>
     </section>
