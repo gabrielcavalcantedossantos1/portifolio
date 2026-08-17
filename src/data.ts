@@ -8,6 +8,7 @@ import catalogoDeFilmes from "./assets/imageProjectsFrontEnd/catalogoDeFilmes.pn
 import buscadorGitHub from "./assets/imageProjectsFrontEnd/buscadorGitHub.png";
 import linkTree from "./assets/imageProjectsFrontEnd/linkTree.png";
 import todoList from "./assets/imageProjectsFrontEnd/todoList.png";
+import blog from "./assets/imageProjectsFrontEnd/blog.png";
 
 export const experiences: Experience[] = [
   {
@@ -230,7 +231,7 @@ export const frontendProjects: Project[] = [
       "Blog com autenticação e gerenciamento de publicações utilizando Firebase.",
     longDescription:
       "Aplicação de blog desenvolvida com React e Firebase. O projeto permite autenticação de usuários e gerenciamento de publicações, servindo como prática de integração entre Front-End e serviços de backend.",
-    image: "/src/assets/hero.png",
+    image: blog,
     technologies: [
       "React",
       "JavaScript",
