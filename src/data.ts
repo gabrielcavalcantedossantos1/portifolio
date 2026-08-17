@@ -7,6 +7,7 @@ import criptoDash from "./assets/imageProjectsFrontEnd/criptoDash.png";
 import catalogoDeFilmes from "./assets/imageProjectsFrontEnd/catalogoDeFilmes.png";
 import buscadorGitHub from "./assets/imageProjectsFrontEnd/buscadorGitHub.png";
 import linkTree from "./assets/imageProjectsFrontEnd/linkTree.png";
+import todoList from "./assets/imageProjectsFrontEnd/todoList.png";
 
 export const experiences: Experience[] = [
   {
@@ -207,7 +208,7 @@ export const frontendProjects: Project[] = [
       "Gerenciador de tarefas desenvolvido para praticar useReducer e TypeScript.",
     longDescription:
       "Aplicação de lista de tarefas desenvolvida com React e TypeScript, com foco no gerenciamento de estado utilizando useReducer e na organização de uma aplicação React tipada.",
-    image: "/src/assets/hero.png",
+    image: todoList,
     technologies: ["React", "TypeScript", "useReducer", "Vite"],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/Todo-List-com-useReducer-e-typescript",
