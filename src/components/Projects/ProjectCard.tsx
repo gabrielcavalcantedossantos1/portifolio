@@ -16,9 +16,6 @@ export function ProjectCard({ project, category, style }: ProjectCardProps) {
           // eslint-disable-next-line @next/next/no-img-element
           <img src={project.image} alt={project.title} className={styles.thumbImg} />
         )}
-        <span className={styles.thumbnailIcon} aria-hidden="true">
-          {category === 'frontend' ? '◈' : '⬡'}
-        </span>
         <span className={styles.year}>{project.year}</span>
       </div>
 
