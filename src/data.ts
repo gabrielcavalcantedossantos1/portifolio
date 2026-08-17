@@ -3,6 +3,7 @@ import type { Experience, Project } from "./types";
 import studyFlow from "./assets/imageProjectsFrontEnd/studyFlow.png";
 import ecommerce from "./assets/imageProjectsFrontEnd/e-commerce.png";
 import pomodoro from "./assets/imageProjectsFrontEnd/pomodoro.png";
+import criptoDash from "./assets/imageProjectsFrontEnd/criptoDash.png";
 
 export const experiences: Experience[] = [
   {
@@ -103,7 +104,7 @@ export const frontendProjects: Project[] = [
     description: "Dashboard de criptomoedas desenvolvido com consumo de API.",
     longDescription:
       "Aplicação desenvolvida para praticar consumo de APIs e construção de dashboards com informações relacionadas ao mercado de criptomoedas.",
-    image: "/src/assets/hero.png",
+    image: criptoDash,
     technologies: ["React", "JavaScript", "API REST", "Vite", "CSS"],
     githubUrl: "https://github.com/gabrielcavalcantedossantos1/cripto-dash",
     liveUrl: "https://cripto-dash-wine.vercel.app/",
