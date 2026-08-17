@@ -11,6 +11,7 @@ import todoList from "./assets/imageProjectsFrontEnd/todoList.png";
 import blog from "./assets/imageProjectsFrontEnd/blog.png";
 import spotfyClone from "./assets/imageProjectsFrontEnd/spotfyClone.png";
 import cronometro from "./assets/imageProjectsFrontEnd/cronometro.png";
+import caçaPalavras from "./assets/imageProjectsFrontEnd/caçaPalavras.png";
 
 export const experiences: Experience[] = [
   {
@@ -302,7 +303,7 @@ export const frontendProjects: Project[] = [
       "Jogo de palavras desenvolvido com React e refatorado utilizando Context API e React Router.",
     longDescription:
       "Jogo de palavras desenvolvido durante os estudos de React. O projeto foi posteriormente refatorado para aplicar conceitos de Context API e roteamento, permitindo praticar gerenciamento de estado e organização de aplicações React.",
-    image: "/src/assets/hero.png",
+    image: caçaPalavras,
     technologies: [
       "React",
       "JavaScript",
