@@ -1,6 +1,7 @@
 import type { Experience, Project } from "./types";
 
 import studyFlow from "./assets/imageProjectsFrontEnd/studyFlow.png";
+import ecommerce from "./assets/imageProjectsFrontEnd/e-commerce.png"
 
 export const experiences: Experience[] = [
   {
@@ -58,7 +59,7 @@ export const frontendProjects: Project[] = [
       "Aplicação de e-commerce desenvolvida para praticar construção de interfaces e gerenciamento de estado.",
     longDescription:
       "Projeto de e-commerce desenvolvido com React e TypeScript, explorando construção de interfaces, componentes reutilizáveis, organização de páginas e criação de uma experiência de compra responsiva.",
-    image: "/src/assets/hero.png",
+    image:ecommerce,
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     githubUrl: "https://github.com/gabrielcavalcantedossantos1/E-commerce",
     liveUrl: "https://e-commerce-dusky-sigma-29.vercel.app/",
