@@ -9,7 +9,8 @@ import buscadorGitHub from "./assets/imageProjectsFrontEnd/buscadorGitHub.png";
 import linkTree from "./assets/imageProjectsFrontEnd/linkTree.png";
 import todoList from "./assets/imageProjectsFrontEnd/todoList.png";
 import blog from "./assets/imageProjectsFrontEnd/blog.png";
-import cronometro from './assets/imageProjectsFrontEnd/cronometro.png'
+import spotfyClone from "./assets/imageProjectsFrontEnd/spotfyClone.png";
+import cronometro from "./assets/imageProjectsFrontEnd/cronometro.png";
 
 export const experiences: Experience[] = [
   {
@@ -259,7 +260,7 @@ export const frontendProjects: Project[] = [
       "Interface inspirada no Spotify desenvolvida para praticar React e construção de interfaces.",
     longDescription:
       "Projeto de reprodução de interface inspirado no Spotify, desenvolvido durante os estudos de React para praticar componentização, estruturação de layouts e desenvolvimento de interfaces modernas.",
-    image: "/src/assets/hero.png",
+    image: spotfyClone,
     technologies: ["React", "JavaScript", "CSS", "Vite"],
     githubUrl: "https://github.com/gabrielcavalcantedossantos1/spotify-clone",
     liveUrl: "https://spotify-clone-psi-ten.vercel.app/",
