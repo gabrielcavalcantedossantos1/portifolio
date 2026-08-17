@@ -5,6 +5,7 @@ import ecommerce from "./assets/imageProjectsFrontEnd/e-commerce.png";
 import pomodoro from "./assets/imageProjectsFrontEnd/pomodoro.png";
 import criptoDash from "./assets/imageProjectsFrontEnd/criptoDash.png";
 import catalogoDeFilmes from "./assets/imageProjectsFrontEnd/catalogoDeFilmes.png";
+import buscadorGitHub from "./assets/imageProjectsFrontEnd/buscadorGitHub.png";
 
 export const experiences: Experience[] = [
   {
@@ -154,7 +155,7 @@ export const frontendProjects: Project[] = [
       "Aplicação para pesquisar usuários do GitHub utilizando a GitHub API.",
     longDescription:
       "Aplicação Front-End desenvolvida com React e TypeScript que permite pesquisar usuários do GitHub e visualizar informações de seus perfis. O projeto foi desenvolvido para praticar consumo de APIs, tipagem, componentização e navegação.",
-    image: "/src/assets/hero.png",
+    image: buscadorGitHub,
     technologies: [
       "React",
       "TypeScript",
