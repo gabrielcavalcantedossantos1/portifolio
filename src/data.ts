@@ -4,6 +4,7 @@ import studyFlow from "./assets/imageProjectsFrontEnd/studyFlow.png";
 import ecommerce from "./assets/imageProjectsFrontEnd/e-commerce.png";
 import pomodoro from "./assets/imageProjectsFrontEnd/pomodoro.png";
 import criptoDash from "./assets/imageProjectsFrontEnd/criptoDash.png";
+import catalogoDeFilmes from "./assets/imageProjectsFrontEnd/catalogoDeFilmes.png";
 
 export const experiences: Experience[] = [
   {
@@ -124,7 +125,7 @@ export const frontendProjects: Project[] = [
     description: "Catálogo de filmes utilizando dados reais de uma API.",
     longDescription:
       "Aplicação de catálogo de filmes desenvolvida com React e integração com uma API externa. O projeto trabalha listagem, busca, navegação e apresentação de informações sobre filmes.",
-    image: "/src/assets/hero.png",
+    image: catalogoDeFilmes,
     technologies: [
       "React",
       "JavaScript",
