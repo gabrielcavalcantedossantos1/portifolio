@@ -6,6 +6,7 @@ import pomodoro from "./assets/imageProjectsFrontEnd/pomodoro.png";
 import criptoDash from "./assets/imageProjectsFrontEnd/criptoDash.png";
 import catalogoDeFilmes from "./assets/imageProjectsFrontEnd/catalogoDeFilmes.png";
 import buscadorGitHub from "./assets/imageProjectsFrontEnd/buscadorGitHub.png";
+import linkTree from "./assets/imageProjectsFrontEnd/linkTree.png";
 
 export const experiences: Experience[] = [
   {
@@ -184,7 +185,7 @@ export const frontendProjects: Project[] = [
       "Página de links personalizada desenvolvida com React, TypeScript e Firebase.",
     longDescription:
       "Aplicação inspirada em plataformas de agregação de links, desenvolvida para praticar React, TypeScript, Firebase e construção de interfaces responsivas.",
-    image: "/src/assets/hero.png",
+    image: linkTree,
     technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS", "Vite"],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/linktree-firebase",
