@@ -9,6 +9,7 @@ import buscadorGitHub from "./assets/imageProjectsFrontEnd/buscadorGitHub.png";
 import linkTree from "./assets/imageProjectsFrontEnd/linkTree.png";
 import todoList from "./assets/imageProjectsFrontEnd/todoList.png";
 import blog from "./assets/imageProjectsFrontEnd/blog.png";
+import cronometro from './assets/imageProjectsFrontEnd/cronometro.png'
 
 export const experiences: Experience[] = [
   {
@@ -279,7 +280,7 @@ export const frontendProjects: Project[] = [
       "Aplicação de cronômetro desenvolvida para praticar lógica e controle de tempo.",
     longDescription:
       "Projeto desenvolvido durante os estudos de JavaScript e React para praticar lógica de programação, gerenciamento de estado e controle de tempo.",
-    image: "/src/assets/hero.png",
+    image: cronometro,
     technologies: ["React", "JavaScript", "Vite", "CSS"],
     githubUrl: "https://github.com/gabrielcavalcantedossantos1/timer",
     liveUrl: "https://cron-metro-murex.vercel.app/",
