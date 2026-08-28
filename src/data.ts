@@ -13,7 +13,8 @@ import spotfyClone from "./assets/imageProjectsFrontEnd/spotfyClone.png";
 import cronometro from "./assets/imageProjectsFrontEnd/cronometro.png";
 import caçaPalavras from "./assets/imageProjectsFrontEnd/caçaPalavras.png";
 import viagens from "./assets/imageProjectsFrontEnd/viagens.png";
-import unhas from "./assets/imageProjectsFrontEnd/unhas.png"
+import unhas from "./assets/imageProjectsFrontEnd/unhas.png";
+import serralheria from "./assets/imageProjectsFrontEnd/serralheria.png";
 
 export const experiences: Experience[] = [
   {
@@ -96,9 +97,10 @@ export const frontendProjects: Project[] = [
       "Site institucional desenvolvido para apresentar os serviços da Serralheria Oliveira.",
     longDescription:
       "Projeto desenvolvido para apresentar os serviços, informações e formas de contato da Serralheria Oliveira através de uma interface moderna, responsiva e profissional.",
-    image: "/src/assets/hero.png",
+    image: serralheria,
     technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    githubUrl: "COLOQUE_AQUI_O_LINK_DO_GITHUB",
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/Serralheria-Oliveira",
     liveUrl: "https://serralheriaoliveira.vercel.app/",
     status: "completed",
     year: 2026,
