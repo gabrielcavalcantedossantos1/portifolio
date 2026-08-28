@@ -12,6 +12,7 @@ import blog from "./assets/imageProjectsFrontEnd/blog.png";
 import spotfyClone from "./assets/imageProjectsFrontEnd/spotfyClone.png";
 import cronometro from "./assets/imageProjectsFrontEnd/cronometro.png";
 import caçaPalavras from "./assets/imageProjectsFrontEnd/caçaPalavras.png";
+import viagens from "./assets/imageProjectsFrontEnd/viagens.png"
 
 export const experiences: Experience[] = [
   {
@@ -33,8 +34,87 @@ export const experiences: Experience[] = [
 ];
 
 export const frontendProjects: Project[] = [
+  // =====================================================
+  // 1. VIAGENS
+  // =====================================================
   {
     id: "fe-1",
+    title: "Viagens",
+    description:
+      "Aplicação web para consulta e organização de informações sobre viagens e rotas.",
+    longDescription:
+      "Projeto desenvolvido para apresentar informações de viagens, destinos e paradas de forma organizada, proporcionando uma experiência simples e intuitiva para consulta das rotas.",
+    image: viagens,
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    githubUrl: "COLOQUE_AQUI_O_LINK_DO_GITHUB",
+    liveUrl: "COLOQUE_AQUI_O_LINK_DO_SITE",
+    status: "completed",
+    year: 2026,
+    highlights: [
+      "Informações de viagens",
+      "Organização de rotas",
+      "Interface responsiva",
+      "Desenvolvimento com React",
+      "Tipagem com TypeScript",
+    ],
+  },
+
+  // =====================================================
+  // 2. UNHAS
+  // =====================================================
+  {
+    id: "fe-2",
+    title: "Unhas",
+    description:
+      "Site desenvolvido para apresentação de serviços e trabalhos de uma profissional de unhas.",
+    longDescription:
+      "Projeto desenvolvido com React e TypeScript para apresentar os serviços, trabalhos e informações de uma profissional de unhas, com foco em uma interface moderna, responsiva e intuitiva.",
+    image: "/src/assets/hero.png",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/unhas-v2",
+    liveUrl: "COLOQUE_AQUI_O_LINK_DO_SITE",
+    status: "completed",
+    year: 2026,
+    highlights: [
+      "Interface responsiva",
+      "Desenvolvimento com React",
+      "Tipagem com TypeScript",
+      "Design moderno",
+      "Apresentação de serviços",
+    ],
+  },
+
+  // =====================================================
+  // 3. SERRALHERIA OLIVEIRA
+  // =====================================================
+  {
+    id: "fe-3",
+    title: "Serralheria Oliveira",
+    description:
+      "Site institucional desenvolvido para apresentar os serviços da Serralheria Oliveira.",
+    longDescription:
+      "Projeto desenvolvido para apresentar os serviços, informações e formas de contato da Serralheria Oliveira através de uma interface moderna, responsiva e profissional.",
+    image: "/src/assets/hero.png",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    githubUrl: "COLOQUE_AQUI_O_LINK_DO_GITHUB",
+    liveUrl: "https://serralheriaoliveira.vercel.app/",
+    status: "completed",
+    year: 2026,
+    highlights: [
+      "Site institucional",
+      "Interface responsiva",
+      "Apresentação de serviços",
+      "Design moderno",
+      "Informações de contato",
+    ],
+  },
+
+  // =====================================================
+  // 4. STUDYFLOW
+  // =====================================================
+  {
+    id: "fe-4",
     title: "StudyFlow",
     description:
       "SaaS para organização de estudos com tarefas, categorias, Pomodoro e acompanhamento de progresso.",
@@ -49,8 +129,10 @@ export const frontendProjects: Project[] = [
       "Firestore",
       "Vite",
     ],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/SaaS",
-    liveUrl: "https://study-flow-beta-tawny.vercel.app/",
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/SaaS",
+    liveUrl:
+      "https://study-flow-beta-tawny.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -62,8 +144,11 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 5. E-COMMERCE
+  // =====================================================
   {
-    id: "fe-2",
+    id: "fe-5",
     title: "E-commerce",
     description:
       "Aplicação de e-commerce desenvolvida para praticar construção de interfaces e gerenciamento de estado.",
@@ -71,8 +156,10 @@ export const frontendProjects: Project[] = [
       "Projeto de e-commerce desenvolvido com React e TypeScript, explorando construção de interfaces, componentes reutilizáveis, organização de páginas e criação de uma experiência de compra responsiva.",
     image: ecommerce,
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/E-commerce",
-    liveUrl: "https://e-commerce-dusky-sigma-29.vercel.app/",
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/E-commerce",
+    liveUrl:
+      "https://e-commerce-dusky-sigma-29.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -83,18 +170,28 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 6. CHRONOS POMODORO
+  // =====================================================
   {
-    id: "fe-3",
+    id: "fe-6",
     title: "Chronos Pomodoro",
     description:
       "Aplicação de produtividade baseada na técnica Pomodoro para gerenciamento de tempo.",
     longDescription:
       "Aplicação web de produtividade baseada na técnica Pomodoro. O usuário pode controlar sessões de foco e descanso, personalizar os tempos e utilizar um sistema de gerenciamento de estado global com Context API.",
     image: pomodoro,
-    technologies: ["React", "TypeScript", "Context API", "Vite", "CSS Modules"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Context API",
+      "Vite",
+      "CSS Modules",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/chronos-pomodoro",
-    liveUrl: "https://chronos-pomodoro-pi-rust.vercel.app/",
+    liveUrl:
+      "https://chronos-pomodoro-pi-rust.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -106,16 +203,28 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 7. CRYPTO DASH
+  // =====================================================
   {
-    id: "fe-4",
+    id: "fe-7",
     title: "Crypto Dash",
-    description: "Dashboard de criptomoedas desenvolvido com consumo de API.",
+    description:
+      "Dashboard de criptomoedas desenvolvido com consumo de API.",
     longDescription:
       "Aplicação desenvolvida para praticar consumo de APIs e construção de dashboards com informações relacionadas ao mercado de criptomoedas.",
     image: criptoDash,
-    technologies: ["React", "JavaScript", "API REST", "Vite", "CSS"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/cripto-dash",
-    liveUrl: "https://cripto-dash-wine.vercel.app/",
+    technologies: [
+      "React",
+      "JavaScript",
+      "API REST",
+      "Vite",
+      "CSS",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/cripto-dash",
+    liveUrl:
+      "https://cripto-dash-wine.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -126,10 +235,14 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 8. CATÁLOGO DE FILMES
+  // =====================================================
   {
-    id: "fe-5",
+    id: "fe-8",
     title: "Catálogo de Filmes",
-    description: "Catálogo de filmes utilizando dados reais de uma API.",
+    description:
+      "Catálogo de filmes utilizando dados reais de uma API.",
     longDescription:
       "Aplicação de catálogo de filmes desenvolvida com React e integração com uma API externa. O projeto trabalha listagem, busca, navegação e apresentação de informações sobre filmes.",
     image: catalogoDeFilmes,
@@ -142,7 +255,8 @@ export const frontendProjects: Project[] = [
     ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/catalogo-de-filmes",
-    liveUrl: "https://catalogo-de-filmes-smoky.vercel.app/",
+    liveUrl:
+      "https://catalogo-de-filmes-smoky.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -154,8 +268,11 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 9. BUSCADOR DO GITHUB
+  // =====================================================
   {
-    id: "fe-6",
+    id: "fe-9",
     title: "Buscador do GitHub",
     description:
       "Aplicação para pesquisar usuários do GitHub utilizando a GitHub API.",
@@ -171,7 +288,8 @@ export const frontendProjects: Project[] = [
     ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/buscador-do-github",
-    liveUrl: "https://buscador-do-github.vercel.app/",
+    liveUrl:
+      "https://buscador-do-github.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -183,18 +301,28 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 10. LINKTREE
+  // =====================================================
   {
-    id: "fe-7",
+    id: "fe-10",
     title: "Linktree com Firebase",
     description:
       "Página de links personalizada desenvolvida com React, TypeScript e Firebase.",
     longDescription:
       "Aplicação inspirada em plataformas de agregação de links, desenvolvida para praticar React, TypeScript, Firebase e construção de interfaces responsivas.",
     image: linkTree,
-    technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS", "Vite"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Firebase",
+      "Tailwind CSS",
+      "Vite",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/linktree-firebase",
-    liveUrl: "https://linktree-firebase-inky.vercel.app/",
+    liveUrl:
+      "https://linktree-firebase-inky.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -205,18 +333,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 11. TODO LIST
+  // =====================================================
   {
-    id: "fe-8",
+    id: "fe-11",
     title: "To-Do List com useReducer e TypeScript",
     description:
       "Gerenciador de tarefas desenvolvido para praticar useReducer e TypeScript.",
     longDescription:
       "Aplicação de lista de tarefas desenvolvida com React e TypeScript, com foco no gerenciamento de estado utilizando useReducer e na organização de uma aplicação React tipada.",
     image: todoList,
-    technologies: ["React", "TypeScript", "useReducer", "Vite"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "useReducer",
+      "Vite",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/Todo-List-com-useReducer-e-typescript",
-    liveUrl: "https://todo-list-com-use-reducer-e-typescr.vercel.app/",
+    liveUrl:
+      "https://todo-list-com-use-reducer-e-typescr.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -227,8 +364,11 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 12. MINI BLOG
+  // =====================================================
   {
-    id: "fe-9",
+    id: "fe-12",
     title: "Mini Blog",
     description:
       "Blog com autenticação e gerenciamento de publicações utilizando Firebase.",
@@ -242,8 +382,10 @@ export const frontendProjects: Project[] = [
       "Firestore",
       "React Router",
     ],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/mini-blog",
-    liveUrl: "https://mini-blog-seven-phi.vercel.app/",
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/mini-blog",
+    liveUrl:
+      "https://mini-blog-seven-phi.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -254,17 +396,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 13. SPOTIFY CLONE
+  // =====================================================
   {
-    id: "fe-10",
+    id: "fe-13",
     title: "Spotify Clone",
     description:
       "Interface inspirada no Spotify desenvolvida para praticar React e construção de interfaces.",
     longDescription:
       "Projeto de reprodução de interface inspirado no Spotify, desenvolvido durante os estudos de React para praticar componentização, estruturação de layouts e desenvolvimento de interfaces modernas.",
     image: spotfyClone,
-    technologies: ["React", "JavaScript", "CSS", "Vite"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/spotify-clone",
-    liveUrl: "https://spotify-clone-psi-ten.vercel.app/",
+    technologies: [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Vite",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/spotify-clone",
+    liveUrl:
+      "https://spotify-clone-psi-ten.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -275,17 +427,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 14. CRONÔMETRO
+  // =====================================================
   {
-    id: "fe-11",
+    id: "fe-14",
     title: "Cronômetro",
     description:
       "Aplicação de cronômetro desenvolvida para praticar lógica e controle de tempo.",
     longDescription:
       "Projeto desenvolvido durante os estudos de JavaScript e React para praticar lógica de programação, gerenciamento de estado e controle de tempo.",
     image: cronometro,
-    technologies: ["React", "JavaScript", "Vite", "CSS"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/timer",
-    liveUrl: "https://cron-metro-murex.vercel.app/",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "CSS",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/timer",
+    liveUrl:
+      "https://cron-metro-murex.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -296,8 +458,11 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 15. SECRET WORD
+  // =====================================================
   {
-    id: "fe-12",
+    id: "fe-15",
     title: "Secret Word",
     description:
       "Jogo de palavras desenvolvido com React e refatorado utilizando Context API e React Router.",
@@ -311,8 +476,10 @@ export const frontendProjects: Project[] = [
       "React Router",
       "Vite",
     ],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/secret-word",
-    liveUrl: "https://secret-word-iota-woad.vercel.app/",
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/secret-word",
+    liveUrl:
+      "https://secret-word-iota-woad.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -323,17 +490,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 16. JOGO DA VELHA
+  // =====================================================
   {
-    id: "fe-13",
+    id: "fe-16",
     title: "Jogo da Velha",
     description:
       "Jogo da Velha desenvolvido em React com diferentes níveis de dificuldade.",
     longDescription:
       "Jogo da Velha desenvolvido para praticar lógica de programação, gerenciamento de estado e organização de componentes. O projeto possui diferentes níveis de dificuldade e inteligência artificial.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "HTML", "CSS"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/jogo-da-velha",
-    liveUrl: "https://jogo-da-velha-six-fawn.vercel.app/",
+    technologies: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/jogo-da-velha",
+    liveUrl:
+      "https://jogo-da-velha-six-fawn.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -344,17 +521,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 17. JOGO DA FORCA
+  // =====================================================
   {
-    id: "fe-14",
+    id: "fe-17",
     title: "Jogo da Forca",
     description:
       "Jogo da Forca desenvolvido com React e diferentes categorias de palavras.",
     longDescription:
       "Jogo desenvolvido durante os estudos de React para praticar lógica de programação, gerenciamento de estado e construção de interfaces interativas.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "CSS", "Vite"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/Jogo-Da-Forca",
-    liveUrl: "https://jogo-da-forca-5doc.vercel.app/",
+    technologies: [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Vite",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/Jogo-Da-Forca",
+    liveUrl:
+      "https://jogo-da-forca-5doc.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -365,17 +552,28 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 18. CONVERSOR DE MOEDAS
+  // =====================================================
   {
-    id: "fe-15",
+    id: "fe-18",
     title: "Conversor de Moedas",
-    description: "Conversor de moedas desenvolvido com consumo de API.",
+    description:
+      "Conversor de moedas desenvolvido com consumo de API.",
     longDescription:
       "Aplicação desenvolvida para praticar consumo de APIs, requisições assíncronas e manipulação de dados em uma interface React.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "API REST", "Vite", "CSS"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "API REST",
+      "Vite",
+      "CSS",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/conversor-de-moedas",
-    liveUrl: "https://conversor-de-moedas-1pwe.vercel.app/",
+    liveUrl:
+      "https://conversor-de-moedas-1pwe.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -386,8 +584,11 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 19. CALCULADORA DE JUROS COMPOSTOS
+  // =====================================================
   {
-    id: "fe-16",
+    id: "fe-19",
     title: "Calculadora de Juros Compostos",
     description:
       "Calculadora para simulação de investimentos utilizando juros compostos.",
@@ -403,7 +604,8 @@ export const frontendProjects: Project[] = [
     ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/calculadora-de-juros-compostos",
-    liveUrl: "https://calculadora-de-juros-compostos-iota.vercel.app/",
+    liveUrl:
+      "https://calculadora-de-juros-compostos-iota.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -414,18 +616,28 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 20. PREVISÃO DO TEMPO V1
+  // =====================================================
   {
-    id: "fe-17",
+    id: "fe-20",
     title: "Previsão do Tempo v1",
     description:
       "Aplicação de previsão do tempo utilizando dados obtidos através de API.",
     longDescription:
       "Projeto desenvolvido para praticar integração de aplicações React com APIs externas e apresentação de informações meteorológicas em uma interface web.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "API REST", "Vite", "CSS"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "API REST",
+      "Vite",
+      "CSS",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/previsao-do-tempo",
-    liveUrl: "https://previsao-do-tempo-one-jet.vercel.app/",
+    liveUrl:
+      "https://previsao-do-tempo-one-jet.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -436,18 +648,28 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 21. PREVISÃO DO TEMPO V2
+  // =====================================================
   {
-    id: "fe-18",
+    id: "fe-21",
     title: "Previsão do Tempo v2",
     description:
       "Versão evoluída de uma aplicação de previsão do tempo com recursos adicionais.",
     longDescription:
       "Segunda versão do projeto de previsão do tempo, desenvolvida para evoluir os conhecimentos adquiridos na primeira versão e trabalhar novos recursos, integração com API e experiência do usuário.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "API REST", "HTML", "CSS"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "API REST",
+      "HTML",
+      "CSS",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/previs-o-do-tempo-2",
-    liveUrl: "https://previsao-do-tempo-2.vercel.app/",
+    liveUrl:
+      "https://previsao-do-tempo-2.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -458,17 +680,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 22. RELÓGIO MUNDIAL
+  // =====================================================
   {
-    id: "fe-19",
+    id: "fe-22",
     title: "Relógio Mundial",
     description:
       "Aplicação para visualizar horários de diferentes regiões do mundo.",
     longDescription:
       "Projeto desenvolvido para praticar manipulação de datas e horários, trabalhando com diferentes fusos horários e atualização dinâmica das informações apresentadas na interface.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "Vite", "CSS"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/relogio-mundial",
-    liveUrl: "https://relogio-mundial-wheat.vercel.app/",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "CSS",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/relogio-mundial",
+    liveUrl:
+      "https://relogio-mundial-wheat.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -479,16 +711,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 23. PREÇO TETO
+  // =====================================================
   {
-    id: "fe-20",
+    id: "fe-23",
     title: "Preço Teto",
-    description: "Aplicação para cálculo de preço teto de investimentos.",
+    description:
+      "Aplicação para cálculo de preço teto de investimentos.",
     longDescription:
       "Projeto desenvolvido para praticar React, TypeScript e construção de uma aplicação baseada em cálculos financeiros. O usuário pode informar dados e utilizar a aplicação para realizar estimativas de preço teto.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "TypeScript", "Vite", "CSS"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/pre-o0-teto",
-    liveUrl: "https://preco-teto-eight.vercel.app/",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "CSS",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/pre-o0-teto",
+    liveUrl:
+      "https://preco-teto-eight.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -499,17 +742,26 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 24. LANDING PAGE
+  // =====================================================
   {
-    id: "fe-21",
+    id: "fe-24",
     title: "Landing Page",
     description:
       "Landing page desenvolvida para praticar criação de interfaces modernas e responsivas.",
     longDescription:
       "Projeto desenvolvido durante os estudos de Front-End para praticar estruturação de páginas, estilização e adaptação de interfaces para diferentes tamanhos de tela.",
     image: "/src/assets/hero.png",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/landing-page",
-    liveUrl: "https://landing-page-nine-rosy.vercel.app/",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/landing-page",
+    liveUrl:
+      "https://landing-page-nine-rosy.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -520,17 +772,26 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 25. ÁLBUM DE FOTOS
+  // =====================================================
   {
-    id: "fe-22",
+    id: "fe-25",
     title: "Álbum de Fotos",
     description:
       "Galeria de imagens desenvolvida para praticar construção de interfaces responsivas.",
     longDescription:
       "Projeto de galeria de fotos desenvolvido para praticar organização visual de imagens, estilização e construção de uma interface adaptável para diferentes dispositivos.",
     image: "/src/assets/hero.png",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/gabrielcavalcantedossantos1/album-de-fotos",
-    liveUrl: "https://album-de-fotos-ruddy.vercel.app/",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/album-de-fotos",
+    liveUrl:
+      "https://album-de-fotos-ruddy.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
@@ -541,18 +802,27 @@ export const frontendProjects: Project[] = [
     ],
   },
 
+  // =====================================================
+  // 26. LISTA DE TAREFAS
+  // =====================================================
   {
-    id: "fe-23",
+    id: "fe-26",
     title: "Lista de Tarefas",
     description:
       "Aplicação de gerenciamento de tarefas desenvolvida para praticar React.",
     longDescription:
       "Projeto de lista de tarefas criado durante os estudos de React para praticar gerenciamento de estado, componentes e interação com o usuário.",
     image: "/src/assets/hero.png",
-    technologies: ["React", "JavaScript", "Vite", "CSS"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "CSS",
+    ],
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/lista-de-tarefas",
-    liveUrl: "https://lista-de-tarefas-eight-nu.vercel.app/",
+    liveUrl:
+      "https://lista-de-tarefas-eight-nu.vercel.app/",
     status: "completed",
     year: 2026,
     highlights: [
