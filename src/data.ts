@@ -16,6 +16,9 @@ import viagens from "./assets/imageProjectsFrontEnd/viagens.png";
 import unhas from "./assets/imageProjectsFrontEnd/unhas.png";
 import serralheria from "./assets/imageProjectsFrontEnd/serralheria.png";
 
+// back image
+import conversorDeTemperatura from "./assets/imageProjectsBackEnd/conversorDeTemperatura.png";
+
 export const experiences: Experience[] = [
   {
     id: "exp-1",
@@ -713,7 +716,29 @@ export const frontendProjects: Project[] = [
   },
 ];
 
-export const backendProjects: Project[] = [];
+export const backendProjects: Project[] = [
+  {
+    id: "conversor-temperatura",
+    title: "Conversor de Temperatura",
+    description:
+      "Conversor de temperaturas desenvolvido em Java para praticar lógica de programação.",
+    longDescription:
+      "Projeto desenvolvido em Java com foco no aprendizado de lógica de programação, métodos, estruturas condicionais, loops, validação de entradas e conversão entre Celsius e Fahrenheit.",
+    technologies: ["Java"],
+    status: "completed",
+    highlights: [
+      "Conversão entre Celsius e Fahrenheit",
+      "Validação da opção escolhida pelo usuário",
+      "Uso de métodos com parâmetros e retorno",
+      "Estruturas condicionais e de repetição",
+      "Entrada de dados com Scanner",
+    ],
+    year: 2026,
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/conversorDeTemperatura",
+    image: conversorDeTemperatura,
+  },
+];
 
 export const projectsByCategory = {
   frontend: frontendProjects,
