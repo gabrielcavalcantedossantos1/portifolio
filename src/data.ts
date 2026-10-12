@@ -18,6 +18,7 @@ import serralheria from "./assets/imageProjectsFrontEnd/serralheria.png";
 
 // back image
 import conversorDeTemperatura from "./assets/imageProjectsBackEnd/conversorDeTemperatura.png";
+import calculadoraJava from "./assets/imageProjectsBackEnd/calculadoraJava.png";
 
 export const experiences: Experience[] = [
   {
@@ -737,6 +738,29 @@ export const backendProjects: Project[] = [
     githubUrl:
       "https://github.com/gabrielcavalcantedossantos1/conversorDeTemperatura",
     image: conversorDeTemperatura,
+  },
+  {
+    id: "calculadora-java",
+    title: "Calculadora Java",
+    description:
+      "Calculadora desenvolvida em Java para praticar lógica de programação e estruturas de controle.",
+    longDescription:
+      "Projeto desenvolvido em Java com foco no aprendizado de lógica de programação, operações matemáticas, estruturas condicionais, laços de repetição, validação de operadores e entrada de dados pelo Scanner.",
+    technologies: ["Java"],
+    status: "completed",
+    highlights: [
+      "Operações de adição, subtração, multiplicação e divisão",
+      "Validação das opções de operação",
+      "Prevenção de divisão por zero",
+      "Uso de estruturas condicionais com switch-case",
+      "Estruturas de repetição com do-while",
+      "Entrada de dados com Scanner",
+      "Exibição formatada dos resultados",
+    ],
+    year: 2026,
+    githubUrl:
+      "https://github.com/gabrielcavalcantedossantos1/calculadora-java",
+    image: calculadoraJava,
   },
 ];
 
