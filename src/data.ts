@@ -18,7 +18,7 @@ import serralheria from "./assets/imageProjectsFrontEnd/serralheria.png";
 
 // back image
 import conversorDeTemperatura from "./assets/imageProjectsBackEnd/conversorDeTemperatura.png";
-import calculadoraJava from "./assets/imageProjectsBackEnd/calculadoraJava.png";
+import calculadoraJava from "./assets/imageProjectsBackEnd/calculadora-java.png";
 
 export const experiences: Experience[] = [
   {
@@ -759,7 +759,7 @@ export const backendProjects: Project[] = [
     ],
     year: 2026,
     githubUrl:
-      "https://github.com/gabrielcavalcantedossantos1/calculadora-java",
+      "https://github.com/gabrielcavalcantedossantos1/calculadora-basica-em-java",
     image: calculadoraJava,
   },
 ];
